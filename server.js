@@ -8,7 +8,7 @@ var env = require('./app/config/env'),
 	environment = new env();
 
 var mongoose = require('mongoose');
-	mongoose.connect('mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/');
+	mongoose.connect('mongodb://' + environment.mongo.OPENSHIFT_MONGODB_DB_USERNAME + ':' + environment.mongo.OPENSHIFT_MONGODB_DB_PASSWORD + '@' + $OPENSHIFT_MONGODB_DB_HOST + ':' + $OPENSHIFT_MONGODB_DB_PORT + '/' + environment.mongo.dbname);
 //load expressjs configs/headers/defaults.  for more info, check expressjs.com, pass in app and overall config
 require('./app/config/express_config')(app);
 
