@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ArtMap.io</title>
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				<a class="navbar-brand"><b>Art</b>map</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<form class="navbar-form">
+							<input type="text" class="form-control" placeholder="Search">
+						</form>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="howto-modal">How To & FAQs</a></li>
+						<li><a id="about-modal">About</a></li>
+						<li><a id="contact-modal">Sign In with Twitter!</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<div class="modal" id="howto">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+					<h3>Artmap</h3>
+					<h4>How to Use This Map</h4>
+					<p>
+						Well, you are already here, so that is step 1. Congrats!
+					</p>
+					<p>
+						In the Navigation bar, the search input line allows you to filter art by <b>location</b>, twitter <b>user</b> name, and by <b>hashtag</b>. 
+						If you type in an <b>address</b> or <b>point-of-interest</b>, we will zoom to that location and show you the nearby art.</br>
+						If you want to search for a specific <b>user</b> (person who submitted the art), simply enter an @ followed by the username, for example @artmapio.</br>
+						If you want to filter on <b>hashtag</b>, enter a # followed by the hashtag you want to filter with, for example #rowhouse.
+					</p>
+					<h4>How to Add Art</h4>
+					<p>
+						If you want to contribute, you have to physically go to the artwork. On your smart phone, open the twitter application and include the picture, turn on location, and use the hashtag #artmapio. Any other hashtags you include will enable your image to be filtered on them, as well as your username.
+
+						If you delete your tweet, it will be removed from the Artmap.
+					</p>
+					<h4>FAQ's</h4>
+					<p>
+						<b>What is the purpose of this?</b></br>
+						This is just for fun, trying to show off the huge amount of awesome street art (especially in Baltimore City). You can find more in the about section.
+					</p>
+					<p>
+						<b>Someone tweeted a picture I own copyright to and I want it taken down.</b>
+						We are sorry about that. I am sure whoever submitted your image meant to share the beauty you captured in your image with everyone. Please take it as the highest compliment to your work. If you contact us we can take the post down.
+					</p>
+					<p>
+						<b>I already have a great picture and know where it is, do I really have to go to the art to tweet it?</b>
+						Right now, yes. We are exploring options to allow users to create an account and post the location of images. Currently, we rely on the geolocation on your tweet to map the location of the image you tweet.
+					</p>
+					<p>
+						<b>I found an innapropriate image, or an image in the wrong place, how do I fix it?</b>
+						Right now your best bet is to contact us. We are working on a method for removing and updating the locations, most likely through a community moderation feature.
+					</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="about">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p>
+							This application was built by <a href="https://devworks.io" target="_blank">DevWorks</a> and <a href="https://twitter.com/thisispayal0" target="_blank">Payal Patnaik</a> of GeoMore. If you are interested in sponsoring development or helping cover server costs please email us at hello@devworks.io .
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="map"></div>
+			</div>
+		</div>
+
+		<!-- put in scripts -->
+		<script src="js/jquery.js"></script>
+		<script src="js/functional.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/leaflet.js"></script>
+		<!--<script src="js/leaflet_mods/sidebar.js"></script>-->
+		<script src="js/map.js"></script>
+	</body>
+</html>
