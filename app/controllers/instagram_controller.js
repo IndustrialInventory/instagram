@@ -15,7 +15,7 @@ curl('https://api.instagram.com/v1/subscriptions/', {
 	object_id: 'industrialinvent',
 	callback_url: 'http://social-industrialinvent.rhcloud.com/api/v1/instagramCallback'
 }, function(err) {
-	console.info(this);
+	console.log(err);
 });
 
 /*
