@@ -33,7 +33,9 @@
     "connect-busboy":"latest",
     "async": "latest",
     "mongoose":"latest",
-    "http":"latest"
+    "http":"latest",
+    "instagram-node":"latest",
+    "node-curl":"latest"
   },
   "devDependencies": {},
   "bundleDependencies": [],

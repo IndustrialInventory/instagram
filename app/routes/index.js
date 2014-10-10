@@ -1,6 +1,7 @@
-var twitterController = require('./../controllers/twitter_controller');
-    geoController = require('./../controllers/geo_controller'),
-    helperController = require('./../controllers/helper_controller');
+// var twitterController = require('./../controllers/twitter_controller');
+var geoController = require('./../controllers/geo_controller'),
+    helperController = require('./../controllers/helper_controller'),
+    instagramController = require('./../controllers/instagram_controller');
 
 
 //TODO middleware for auth, standardize output into a specific schema in the config folder
@@ -22,6 +23,7 @@ module.exports = function (app) {
     //twitter routes
     app.get( "/api/" + version + "/artByUser", geoController.artByUser);
     app.get( "/api/" + version + "/artWithin", geoController.artWithin);
+    app.get( "/api/" + version + "/instagramCallback", instagramController.callbackHandler);
     // app.get( "/api/" + version + "/remove", helperController.deadTweet);
     // app.post("/api/" + version + "/upload", twitterController.upload);
 

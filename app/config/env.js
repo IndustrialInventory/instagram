@@ -5,11 +5,11 @@ module.exports = function () {
 	this.publicdir = appDir + '/public';
 
 	this.dbServer = (process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + parseInt(process.env.OPENSHIFT_MONGODB_DB_PORT));
-	// this.db = new mongodb.Db(process.env.OPENSHIFT_APP_NAME, self.dbServer, {auto_reconnect: true});
 	this.dbUser = process.env.OPENSHIFT_MONGODB_DB_USERNAME;
 	this.dbPass = process.env.OPENSHIFT_MONGODB_DB_PASSWORD;
 
 	this.ipaddr  = process.env.OPENSHIFT_NODEJS_IP;
 	this.port    = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 8080;
-	this.connstring = 'mongodb://'+this.dbUser+':' + this.dbPass + '@' + this.dbServer + '/social';
+	// this.connstring = 'mongodb://'+this.dbUser+':' + this.dbPass + '@' + this.dbServer + '/social';
+	this.connstring = 'mongodb://localhost/social';
 };
