@@ -1,27 +1,3 @@
-// {
-// 	"name": "artmap",
-// 	"description": "An art mapping project",
-// 	"contributors": [{
-// 		"name":"Chris Hogan",
-// 		"email": "chris@devworks.io"
-// 		},{
-// 		"name":"Payal Patnaik",
-// 		"email": "patnaikpayal@gmail.com"
-// 	}],
-// 	"dependencies": {
-// 		"express": "~ 4.x",
-// 		"connect-busboy": "latest",
-// 		"body-parser": "latest",
-// 		"corser": "latest",
-// 		"twit": "latest",
-// 		"connect-busboy":"latest",
-// 		"async": "latest",
-// 		"mongoose":"latest",
-// 		"http":"latest"
-// 	},
-// 	"private": true,
-//   	"main": "server.js"
-// }
 {
   "name": "OpenShift-Sample-App",
   "version": "1.0.0",
