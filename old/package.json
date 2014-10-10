@@ -25,7 +25,15 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~ 4.x",
+    "connect-busboy": "latest",
+    "body-parser": "latest",
+    "corser": "latest",
+    "twit": "latest",
+    "connect-busboy":"latest",
+    "async": "latest",
+    "mongoose":"latest",
+    "http":"latest"
   },
   "devDependencies": {},
   "bundleDependencies": [],
