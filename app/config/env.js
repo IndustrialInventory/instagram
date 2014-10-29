@@ -10,6 +10,6 @@ module.exports = function () {
 
 	this.ipaddr  = process.env.OPENSHIFT_NODEJS_IP;
 	this.port    = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 8080;
-	this.connstring = 'mongodb://'+this.dbUser+':' + this.dbPass + '@' + this.dbServer + '/social';
-	// this.connstring = 'mongodb://localhost/social';
+	//this.connstring = 'mongodb://'+this.dbUser+':' + this.dbPass + '@' + this.dbServer + '/social';
+	this.connstring = 'mongodb://localhost/social';
 };
