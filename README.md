@@ -1,6 +1,12 @@
-artmap
-======
+Instagram Listener
 
-ArtMap project
+To setup locally you need to have NodeJS installed on your system.
 
-[ ![Codeship Status for DevWorks/artmap](https://codeship.io/projects/62f75ad0-24ec-0132-09d6-7214f0ee2424/status)](https://codeship.io/projects/37014)
+```sudo npm install```
+```node server```
+
+This will make the app run on local port 8080.
+
+To test:
+
+TODO
